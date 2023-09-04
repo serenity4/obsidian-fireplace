@@ -1,0 +1,20 @@
+body {
+	--font-text-theme: Times New Roman;
+}
+
+.theme-dark {
+	--background-primary: hsl(200, 30%, 5%);
+	--background-secondary: hsl(200, 30%, 10%);
+}
+
+.titlebar-button-container, .workspace-tab-header-container, .mod-left	{
+	background: var(--background-primary) !important;
+}
+
+.HyperMD-codeblock-bg, .cm-inline-code {
+	background: var(--background-secondary) !important;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
